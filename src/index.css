@@ -2,41 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Hope Wave 2027 Campaign Design System
+Colors: Hopeful Green, Electric Blue, Vibrant Orange, Soft Grey
+Fonts: Montserrat (Headlines), Poppins (Slogans), Raleway (Subheadings), Roboto (Body)
+Theme: Hope. Trust. Youth Power.
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
+    /* Hope Wave Campaign Colors */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 210 11% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 210 11% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 210 11% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Hopeful Green as Primary */
+    --primary: 122 39% 49%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 122 39% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Electric Blue as Secondary */
+    --secondary: 210 77% 46%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Vibrant Orange as Accent */
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* Soft Grey variations */
+    --muted: 0 0% 96%;
+    --muted-foreground: 210 11% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --border: 210 20% 92%;
+    --input: 210 20% 92%;
+    --ring: 122 39% 49%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Kenyan Flag inspired colors */
+    --kenya-red: 0 100% 39%;
+    --kenya-black: 0 0% 15%;
+    --kenya-white: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Campaign specific colors */
+    --hope-green: 122 39% 49%;
+    --trust-blue: 210 77% 46%;
+    --youth-orange: 36 100% 50%;
+    --unity-grey: 0 0% 96%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hope-green)), hsl(var(--trust-blue)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--youth-orange)), hsl(var(--hope-green)));
+    --gradient-patriotic: linear-gradient(135deg, hsl(var(--kenya-red)), hsl(var(--kenya-black)));
+
+    /* Shadows with campaign colors */
+    --shadow-hope: 0 10px 40px -10px hsl(var(--hope-green) / 0.3);
+    --shadow-trust: 0 10px 40px -10px hsl(var(--trust-blue) / 0.3);
+    --shadow-youth: 0 10px 40px -10px hsl(var(--youth-orange) / 0.3);
+
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,41 +86,43 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 210 11% 8%;
+    --foreground: 0 0% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 11% 10%;
+    --card-foreground: 0 0% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 11% 10%;
+    --popover-foreground: 0 0% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 122 39% 55%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 122 39% 70%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 77% 52%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 36 100% 55%;
+    --accent-foreground: 0 0% 100%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --muted: 210 11% 15%;
+    --muted-foreground: 210 11% 70%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 210 11% 20%;
+    --input: 210 11% 15%;
+    --ring: 122 39% 55%;
+
+    --hope-green: 122 39% 55%;
+    --trust-blue: 210 77% 52%;
+    --youth-orange: 36 100% 55%;
+    --unity-grey: 210 11% 15%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hope-green)), hsl(var(--trust-blue)));
+    --gradient-cta: linear-gradient(135deg, hsl(var(--youth-orange)), hsl(var(--hope-green)));
+    --gradient-patriotic: linear-gradient(135deg, hsl(var(--kenya-red)), hsl(var(--kenya-black)));
   }
 }
 
@@ -100,6 +132,69 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-roboto;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat;
+  }
+
+  .campaign-slogan {
+    @apply font-poppins font-bold;
+  }
+
+  .campaign-subheading {
+    @apply font-raleway font-medium;
+  }
+}
+
+@layer components {
+  .btn-hope {
+    @apply bg-[hsl(var(--hope-green))] text-white hover:bg-[hsl(var(--primary-glow))] transition-all duration-300 shadow-[var(--shadow-hope)];
+  }
+
+  .btn-trust {
+    @apply bg-[hsl(var(--trust-blue))] text-white hover:bg-[hsl(var(--trust-blue))]/80 transition-all duration-300 shadow-[var(--shadow-trust)];
+  }
+
+  .btn-youth {
+    @apply bg-[hsl(var(--youth-orange))] text-white hover:bg-[hsl(var(--youth-orange))]/80 transition-all duration-300 shadow-[var(--shadow-youth)];
+  }
+
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-cta {
+    background: var(--gradient-cta);
+  }
+
+  .gradient-patriotic {
+    background: var(--gradient-patriotic);
+  }
+
+  .text-hope {
+    @apply text-[hsl(var(--hope-green))];
+  }
+
+  .text-trust {
+    @apply text-[hsl(var(--trust-blue))];
+  }
+
+  .text-youth {
+    @apply text-[hsl(var(--youth-orange))];
+  }
+
+  .pulse-hope {
+    animation: pulse-hope 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse-hope {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(var(--hope-green) / 0.7);
+    }
+    50% {
+      box-shadow: 0 0 0 10px hsl(var(--hope-green) / 0);
+    }
   }
 }

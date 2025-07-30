@@ -18,6 +18,12 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
+				'poppins': ['Poppins', 'sans-serif'],
+				'raleway': ['Raleway', 'sans-serif'],
+				'roboto': ['Roboto', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -26,7 +32,8 @@ export default {
 				foreground: 'hsl(var(--foreground))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
-					foreground: 'hsl(var(--primary-foreground))'
+					foreground: 'hsl(var(--primary-foreground))',
+					glow: 'hsl(var(--primary-glow))'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
@@ -51,6 +58,24 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Campaign-specific colors
+				hope: {
+					DEFAULT: 'hsl(var(--hope-green))',
+				},
+				trust: {
+					DEFAULT: 'hsl(var(--trust-blue))',
+				},
+				youth: {
+					DEFAULT: 'hsl(var(--youth-orange))',
+				},
+				unity: {
+					DEFAULT: 'hsl(var(--unity-grey))',
+				},
+				kenya: {
+					red: 'hsl(var(--kenya-red))',
+					black: 'hsl(var(--kenya-black))',
+					white: 'hsl(var(--kenya-white))',
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -84,11 +109,36 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slide-up': {
+					'0%': { opacity: '0', transform: 'translateY(40px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'scale-in': {
+					'0%': { opacity: '0', transform: 'scale(0.9)' },
+					'100%': { opacity: '1', transform: 'scale(1)' }
+				},
+				'pulse-hope': {
+					'0%, 100%': { boxShadow: '0 0 0 0 hsl(var(--hope-green) / 0.7)' },
+					'50%': { boxShadow: '0 0 0 10px hsl(var(--hope-green) / 0)' }
+				},
+				'wave': {
+					'0%, 100%': { transform: 'rotate(-3deg)' },
+					'50%': { transform: 'rotate(3deg)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.6s ease-out forwards',
+				'slide-up': 'slide-up 0.6s ease-out forwards',
+				'scale-in': 'scale-in 0.3s ease-out forwards',
+				'pulse-hope': 'pulse-hope 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'wave': 'wave 2s ease-in-out infinite',
 			}
 		}
 	},
