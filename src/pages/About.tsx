@@ -55,62 +55,50 @@ const About = () => {
           </div>
 
           <div className="space-y-12">
-            {[
-              {
+            {const milestones = [
+  {
     year: "2000",
-    title: "Born in KIKUYU constituency",
+    title: "Born in Kikuyu Constituency",
     description:
       "Born and raised in Kikuyu, I experienced firsthand the challenges facing our youth - unemployment, limited educational opportunities, and lack of representation in leadership.",
   },
   {
-    year: "2015",
-    title: "Community Organizer",
-    description:
-      "Founded 'Youth Voices Kenya', a grassroots organization that has trained over 2,000 young people in civic engagement and leadership skills.",
-  },
-  {
     year: "2016",
-    title: "Primary School Milestone",
-    description:
-      "Sat for my KCPE at Kikuyu Township Primary School. Scored 387 marks with a Grade A, demonstrating strong academic foundation early on.",
+    title: "KCPE at Kikuyu Township Primary",
+    description: "Sat for KCPE, scoring 396 marks and earning a top position in the constituency.",
   },
   {
     year: "2020",
-    title: "Founded Youth Empowerment Foundation",
-    description:
-      "Established the 'Youth Forward Foundation'—a non-profit organization focused on entrepreneurship, digital skills training, and job placement. It has empowered over 2,000 youth across Kikuyu constituency and beyond.",
+    title: "Youth Empowerment Foundation",
+    description: "Founded a non-profit initiative focused on mentorship and digital literacy for underserved youth in Kikuyu.",
   },
   {
     year: "2020",
-    title: "KCSE Achievement",
-    description:
-      "Completed my Kenya Certificate of Secondary Education (KCSE) at Alliance High School, earning a mean grade of A– and preparing myself for university law studies.",
+    title: "KCSE at Musa Gitau High School",
+    description: "Completed KCSE with an impressive A- grade, laying a strong foundation for a career in law.",
   },
   {
     year: "2021",
-    title: "Chuka University – Bachelor of Laws",
-    description:
-      "Joined Chuka University to pursue a Bachelor of Laws (LLB). Became active in leadership and advocacy throughout my studies.",
+    title: "Chuka University - School of Law",
+    description: "Joined Chuka University to pursue a Bachelor’s Degree in Law (LLB), passionate about justice and youth representation.",
   },
   {
     year: "2023",
-    title: "Elected Faculty of Law President",
-    description:
-      "Successfully vied and was elected President of the Faculty of Law, representing law students and leading major academic reforms.",
+    title: "Elected President, Faculty of Law",
+    description: "Vied and elected as the President of the Faculty of Law, championing legal reforms and student welfare.",
   },
   {
     year: "2024",
-    title: "Elected 17th CUSA President",
-    description:
-      "Became the 17th President of Chuka University Students Association (CUSA) for the 2024–2025 term, amplifying student voices and championing youth empowerment.",
+    title: "17th CUSA President",
+    description: "Vied and elected as the 17th President of the Chuka University Students Association (CUSA) for 2024–2025.",
   },
   {
     year: "2025",
-    title: "Declared Candidacy for General Elections",
-    description:
-      "With a vision for inclusive leadership and youth representation, I officially declared my intention to run in the upcoming general elections as a Member of Parliament for Kikuyu constituency.",
-  },
-]
+    title: "Political Awakening",
+    description: "Decided to run in the upcoming general elections to represent Kikuyu Constituency and give the youth a voice in Parliament.",
+  }
+];
+
             ].map((milestone, index) => (
               <div key={index} className="flex items-start space-x-6 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="flex-shrink-0">
