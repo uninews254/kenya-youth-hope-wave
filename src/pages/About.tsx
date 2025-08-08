@@ -110,7 +110,7 @@ const About = () => {
     description:
       "With a vision for inclusive leadership and youth representation, I officially declared my intention to run in the upcoming general elections as a Member of Parliament for Kikuyu constituency.",
   },
-];
+]
             ].map((milestone, index) => (
               <div key={index} className="flex items-start space-x-6 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="flex-shrink-0">
