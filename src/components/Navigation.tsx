@@ -30,10 +30,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-            <img src={torchLogo} alt="Hope Wave Logo" className="h-10 w-10" />
+            <img src={torchLogo} alt="Muchanga Kiragu Campaign Torch Logo - Kikuyu Constituency MP 2027" className="h-10 w-10" />
             <div className="flex flex-col">
-              <span className="font-montserrat font-bold text-lg text-hope">Hope Wave</span>
-              <span className="font-poppins text-xs text-trust">2027</span>
+              <span className="font-montserrat font-bold text-lg text-hope">Muchanga Kiragu</span>
+              <span className="font-poppins text-xs text-trust" title="Mungu mbele • Ngai mbere • God First">Kikuyu MP 2027 • Mungu mbele</span>
             </div>
           </Link>
 

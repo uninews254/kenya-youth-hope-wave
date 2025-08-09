@@ -55,14 +55,11 @@ const Home = () => {
           </Badge>
           
           <h1 className="font-montserrat font-bold text-4xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-            <span className="text-hope">Hope.</span>{" "}
-            <span className="text-trust">Trust.</span>{" "}
-            <span className="text-youth">Youth Power.</span>
+            Muchanga Kiragu — Kikuyu Constituency MP 2027
           </h1>
           
           <p className="campaign-slogan text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto leading-relaxed">
-            Together, we rise to build a Kenya where every youth voice matters. 
-            Join the movement for jobs, education, and clean leadership.
+            Mungu mbele • Ngai mbere • God First. Join Muchanga Kiragu's movement for youth empowerment, jobs, education, and clean leadership.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

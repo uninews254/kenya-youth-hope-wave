@@ -12,10 +12,10 @@ const Footer = () => {
           {/* Logo and Mission */}
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
-              <img src={torchLogo} alt="Hope Wave Logo" className="h-12 w-12" />
+              <img src={torchLogo} alt="Muchanga Kiragu Campaign Torch Logo - Kikuyu Constituency MP 2027" className="h-12 w-12" />
               <div>
-                <h3 className="font-montserrat font-bold text-2xl text-hope">Hope Wave</h3>
-                <p className="font-poppins text-sm text-trust">Youth Power for Change</p>
+                <h3 className="font-montserrat font-bold text-2xl text-hope">Muchanga Kiragu</h3>
+                <p className="font-poppins text-sm text-trust">Mungu mbele • Ngai mbere • God First</p>
               </div>
             </div>
             <p className="font-roboto text-gray-300 mb-4 max-w-md">
@@ -73,7 +73,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © {currentYear} Hope Wave Campaign. All rights reserved.
+            © {currentYear} Muchanga Kiragu Campaign. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">

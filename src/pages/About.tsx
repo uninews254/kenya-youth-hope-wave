@@ -4,6 +4,17 @@ import { Button } from "@/components/ui/button";
 import { Quote, Users, Target, Award, Heart } from "lucide-react";
 
 const About = () => {
+  const timelineData = [
+    { year: "2000", title: "Born in KIKUYU constituency", description: "Born and raised in Kikuyu, I experienced firsthand the challenges facing our youth - unemployment, limited educational opportunities, and lack of representation in leadership." },
+    { year: "2015", title: "Community Organizer", description: "Founded 'Youth Voices Kenya', a grassroots organization that has trained over 2,000 young people in civic engagement and leadership skills." },
+    { year: "2016", title: "Primary School Milestone", description: "Sat for my KCPE at Kikuyu Township Primary School. Scored 387 marks with a Grade A, demonstrating strong academic foundation early on." },
+    { year: "2020", title: "KCSE Achievement", description: "Completed my Kenya Certificate of Secondary Education (KCSE) at Alliance High School, earning a mean grade of A– and preparing myself for university law studies." },
+    { year: "2020", title: "Business Leader", description: "Started a tech company that has created over 200 jobs for young people in our constituency, proving that youth-led businesses can drive economic growth." },
+    { year: "2021", title: "Chuka University – Bachelor of Laws", description: "Joined Chuka University to pursue a Bachelor of Laws (LLB). Became active in leadership and advocacy throughout my studies." },
+    { year: "2023", title: "Elected Faculty of Law President", description: "Successfully vied and was elected President of the Faculty of Law, representing law students and leading major academic reforms." },
+    { year: "2024", title: "Elected 17th CUSA President", description: "Became the 17th President of Chuka University Students Association (CUSA) for the 2024–2025 term, amplifying student voices and championing youth empowerment." },
+    { year: "2025", title: "Political Awakening", description: "After seeing the continued marginalization of youth voices in politics, I decided to run for MP to ensure our generation has real representation in Parliament." }
+  ];
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -31,8 +42,8 @@ const About = () => {
                     <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-6 flex items-center justify-center">
                       <Users className="h-16 w-16 text-white" />
                     </div>
-                    <h3 className="font-montserrat font-bold text-2xl mb-2">MUCHANGA KIRAGU</h3>
-                    <p className="text-white/80 mb-4">MP Candidate 2027</p>
+                    <h3 className="font-montserrat font-bold text-2xl mb-2">Muchanga Kiragu</h3>
+                    <p className="text-white/80 mb-4">Kikuyu Constituency MP 2027</p>
                     <Badge className="bg-youth/20 text-youth border-youth">
                       Age 25 • Lawyer • Community Youth Leader
                     </Badge>
@@ -55,51 +66,7 @@ const About = () => {
           </div>
 
           <div className="space-y-12">
-            {const milestones = [
-  {
-    year: "2000",
-    title: "Born in Kikuyu Constituency",
-    description:
-      "Born and raised in Kikuyu, I experienced firsthand the challenges facing our youth - unemployment, limited educational opportunities, and lack of representation in leadership.",
-  },
-  {
-    year: "2016",
-    title: "KCPE at Kikuyu Township Primary",
-    description: "Sat for KCPE, scoring 396 marks and earning a top position in the constituency.",
-  },
-  {
-    year: "2020",
-    title: "Youth Empowerment Foundation",
-    description: "Founded a non-profit initiative focused on mentorship and digital literacy for underserved youth in Kikuyu.",
-  },
-  {
-    year: "2020",
-    title: "KCSE at Musa Gitau High School",
-    description: "Completed KCSE with an impressive A- grade, laying a strong foundation for a career in law.",
-  },
-  {
-    year: "2021",
-    title: "Chuka University - School of Law",
-    description: "Joined Chuka University to pursue a Bachelor’s Degree in Law (LLB), passionate about justice and youth representation.",
-  },
-  {
-    year: "2023",
-    title: "Elected President, Faculty of Law",
-    description: "Vied and elected as the President of the Faculty of Law, championing legal reforms and student welfare.",
-  },
-  {
-    year: "2024",
-    title: "17th CUSA President",
-    description: "Vied and elected as the 17th President of the Chuka University Students Association (CUSA) for 2024–2025.",
-  },
-  {
-    year: "2025",
-    title: "Political Awakening",
-    description: "Decided to run in the upcoming general elections to represent Kikuyu Constituency and give the youth a voice in Parliament.",
-  }
-];
-
-            ].map((milestone, index) => (
+            {timelineData.map((milestone, index) => (
               <div key={index} className="flex items-start space-x-6 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-hope rounded-full flex items-center justify-center">
@@ -124,7 +91,7 @@ const About = () => {
             "I'm not running to be another politician. I'm running to be the voice of every young person 
             who has been told to wait their turn. Our turn is now."
           </blockquote>
-          <cite className="font-montserrat font-semibold text-trust">- MUCHANGA KIRAGU, MP KIKUYU 2027</cite>
+          <cite className="font-montserrat font-semibold text-trust">- Muchanga Kiragu, Kikuyu Constituency MP 2027</cite>
         </div>
       </section>
 

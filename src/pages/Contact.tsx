@@ -38,7 +38,7 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const phoneNumber = "+254700000000";
-    const message = "Hi! I'd like to get in touch with the Hope Wave campaign.";
+    const message = "Hi! I'd like to get in touch with the Muchanga Kiragu campaign — Kikuyu MP 2027. Mungu mbele!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -87,7 +87,7 @@ const Contact = () => {
                 icon: Mail,
                 title: "Email",
                 description: "Send us a detailed message",
-                contact: "info@hopewave2027.ke",
+                contact: "info@muchangakiragu.ke",
                 action: "Email Us",
                 color: "trust"
               },
@@ -255,7 +255,7 @@ const Contact = () => {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-2">
-                    <p className="font-semibold">Hope Wave Campaign Headquarters</p>
+                    <p className="font-semibold">Muchanga Kiragu Campaign Headquarters</p>
                     <p>Kimathi Street, Nairobi CBD</p>
                     <p>P.O. Box 12345-00100</p>
                     <p>Nairobi, Kenya</p>
