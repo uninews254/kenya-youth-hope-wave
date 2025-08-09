@@ -1,40 +1,99 @@
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Calendar, User, ArrowRight, Heart, MessageCircle, Share2 } from "lucide-react";
+// App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link, useParams } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
-const News = () => {
-  const newsArticles = [
-    {
-      id: 1,
-      title: "Hope Wave Campaign Launches with Record Youth Attendance",
-      excerpt: "Over 5,000 young Kenyans gathered at Kasarani Stadium to launch what promises to be the most youth-driven political campaign in recent history...",
-      author: "Campaign Team",
-      date: "2024-01-16",
-      category: "Campaign",
-      image: "/api/placeholder/400/250",
-      likes: 234,
-      comments: 67,
-      shares: 89
-    },
-    {
-      id: 2,
-      title: "New Skills Training Centers to Create 2,000 Youth Jobs",
-      excerpt: "Our detailed plan for establishing five modern skills training centers across the constituency will directly address youth unemployment...",
-      author: "Alex Mwangi",
-      date: "2024-01-20",
-      category: "Policy",
-      image: "/api/placeholder/400/250",
-      likes: 456,
-      comments: 123,
-      shares: 178
-    },
-    {
-      id: 3,
-      title: "Community Listening Tour: What We Learned in Eastlands",
-      excerpt: "Three days of door-to-door conversations revealed the top priorities for residents: jobs, education, and clean water access...",
-      author: "Community Team",
-      date: "2024-01-25",
+// Demo blog posts (could be moved to .md files later)
+const posts = [
+  {
+    slug: "youth-rally",
+    title: "Youth Rally in Kikuyu",
+    date: "2025-08-09",
+    author: "Muchanga Kiragu",
+    content: `
+We had an incredible turnout at the youth rally today!  
+The energy and unity of our youth are the driving forces behind change.
+    `,
+  },
+  {
+    slug: "education-plan",
+    title: "Our Plan for Education",
+    date: "2025-08-01",
+    author: "Muchanga Kiragu",
+    content: `
+Education is the foundation of progress.  
+We are committed to increasing school funding and improving teacher training.
+    `,
+  },
+];
+
+// Blog list component
+function Blog() {
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-6">Campaign Blog</h1>
+      {posts.map((post) => (
+        <div key={post.slug} className="mb-8 p-4 border rounded-lg shadow">
+          <h2 className="text-xl font-semibold">{post.title}</h2>
+          <p className="text-gray-500">{post.date} — {post.author}</p>
+          <p className="mt-2 text-gray-700">
+            {post.content.substring(0, 100)}...
+          </p>
+          <Link to={`/blog/${post.slug}`} className="text-blue-600 mt-2 inline-block">
+            Read More →
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// Single post component
+function Post() {
+  const { slug } = useParams();
+  const post = posts.find((p) => p.slug === slug);
+
+  if (!post) return <p className="p-6">Post not found</p>;
+
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <Link to="/blog" className="text-blue-600">← Back to Blog</Link>
+      <h1 className="text-3xl font-bold mt-4">{post.title}</h1>
+      <p className="text-gray-500">{post.date} — {post.author}</p>
+      <div className="prose mt-6">
+        <ReactMarkdown>{post.content}</ReactMarkdown>
+      </div>
+    </div>
+  );
+}
+
+// Home page
+function Home() {
+  return (
+    <div className="p-6 max-w-4xl mx-auto">
+      <h1 className="text-4xl font-bold mb-4">Muchanga Kiragu Campaign</h1>
+      <p className="mb-6 text-lg">
+        Welcome to the official campaign website! Stay updated with our mission, events, and progress.
+      </p>
+      <Link to="/blog" className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow">
+        Visit Blog
+      </Link>
+    </div>
+  );
+}
+
+// Main App
+export default function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:slug" element={<Post />} />
+      </Routes>
+    </Router>
+  );
+}      date: "2024-01-25",
       category: "Community",
       image: "/api/placeholder/400/250",
       likes: 187,
