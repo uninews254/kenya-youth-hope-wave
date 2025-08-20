@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const WhatsAppBubble = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+254700000000"; // Replace with actual campaign WhatsApp number
+    const phoneNumber = "+254768664079";
     const message = "Hi! I'd like to support Muchanga Kiragu — Kikuyu Constituency MP 2027. How can I get involved? Mungu mbele!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');

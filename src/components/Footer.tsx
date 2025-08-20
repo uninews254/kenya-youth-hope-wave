@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin, MessageCircle } from "lucide-react";
 import torchLogo from "@/assets/torch-logo.png";
 
 const Footer = () => {
@@ -26,14 +26,14 @@ const Footer = () => {
               <a href="#" className="text-gray-400 hover:text-hope transition-colors">
                 <Facebook className="h-6 w-6" />
               </a>
+              <a href="https://wa.me/254768664079" className="text-gray-400 hover:text-green-500 transition-colors">
+                <MessageCircle className="h-6 w-6" />
+              </a>
               <a href="#" className="text-gray-400 hover:text-trust transition-colors">
                 <Twitter className="h-6 w-6" />
               </a>
               <a href="#" className="text-gray-400 hover:text-youth transition-colors">
                 <Instagram className="h-6 w-6" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-hope transition-colors">
-                <Youtube className="h-6 w-6" />
               </a>
             </div>
           </div>
@@ -56,15 +56,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-youth" />
-                <span className="text-gray-400">+254 700 000 000</span>
+                <span className="text-gray-400">+254 768 664079</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-youth" />
-                <span className="text-gray-400">info@hopewave2027.ke</span>
+                <span className="text-gray-400">kiraguevans4@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MapPin className="h-4 w-4 text-youth" />
-                <span className="text-gray-400">Nairobi, Kenya</span>
+                <span className="text-gray-400">Kikuyu Town, Kenya</span>
               </div>
             </div>
           </div>

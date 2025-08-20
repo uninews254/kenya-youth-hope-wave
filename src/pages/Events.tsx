@@ -12,93 +12,93 @@ const Events = () => {
   const upcomingEvents = [
     {
       id: 1,
-      title: "Youth Rally: Our Time is Now",
-      date: "2024-02-15",
-      time: "14:00",
-      location: "Uhuru Park, Nairobi",
-      description: "Join thousands of young Kenyans as we launch our campaign with energy, hope, and determination for change.",
-      attendees: 2500,
-      type: "Rally",
+      title: "Mental Health Awareness Walk",
+      date: "2024-08-16",
+      time: "09:00",
+      location: "Green Field, Gikambura",
+      description: "Join us for a community walk to raise awareness about mental health and break the stigma around mental wellness.",
+      attendees: 200,
+      type: "Walk",
       status: "upcoming"
     },
     {
       id: 2,
-      title: "Town Hall: Jobs & Education",
-      date: "2024-02-20",
-      time: "18:00",
-      location: "Kibera Community Center",
-      description: "Interactive discussion on our plans for job creation and education reform. Bring your questions and ideas.",
-      attendees: 300,
-      type: "Town Hall",
+      title: "Youth Chairman's Wedding",
+      date: "2024-08-23",
+      time: "10:00",
+      location: "KAG Gikambura Church",
+      description: "Celebrating with our youth leadership as we witness the union of our Youth Chairman.",
+      attendees: 150,
+      type: "Wedding",
       status: "upcoming"
     },
     {
       id: 3,
-      title: "Women in Leadership Forum",
-      date: "2024-02-25",
-      time: "15:00",
-      location: "Karen Country Club",
-      description: "Celebrating women leaders and discussing gender equality in politics and business.",
-      attendees: 150,
-      type: "Forum",
+      title: "Pastor's Breakfast",
+      date: "2024-08-30",
+      time: "08:00",
+      location: "Various Venues, Kikuyu",
+      description: "Meeting with pastors around Kikuyu to discuss spiritual leadership and community development.",
+      attendees: 50,
+      type: "Meeting",
       status: "upcoming"
     },
     {
       id: 4,
-      title: "Student Debate: Future of Kenya",
-      date: "2024-03-01",
-      time: "16:00",
-      location: "University of Nairobi",
-      description: "Interactive debate with university students on key issues facing Kenya's youth.",
-      attendees: 500,
-      type: "Debate",
+      title: "Boda Boda Operators Meeting",
+      date: "2024-09-06",
+      time: "10:00",
+      location: "Kikuyu Town Center",
+      description: "Engaging with boda boda operators to understand their challenges and discuss policy solutions.",
+      attendees: 100,
+      type: "Meeting",
       status: "upcoming"
     },
     {
       id: 5,
-      title: "Farmers' Market & Agricultural Forum",
-      date: "2024-03-05",
+      title: "Kikuyu Women Groups Meeting",
+      date: "2024-10-01",
       time: "09:00",
-      location: "Nakuru Agricultural Center",
-      description: "Supporting local farmers and discussing modern agricultural practices and market access.",
-      attendees: 200,
-      type: "Forum",
-      status: "upcoming"
-    },
-    {
-      id: 6,
-      title: "Technology & Innovation Summit",
-      date: "2024-03-10",
-      time: "10:00",
-      location: "iHub Nairobi",
-      description: "Exploring how technology can solve local problems and create opportunities for youth.",
+      location: "Kikuyu Community Hall",
+      description: "Comprehensive meeting with all women groups in Kikuyu to discuss empowerment and leadership opportunities.",
       attendees: 300,
-      type: "Summit",
+      type: "Meeting",
       status: "upcoming"
     }
   ];
 
   const pastEvents = [
     {
+      id: 6,
+      title: "Land Fundraiser",
+      date: "2024-08-10",
+      time: "08:00",
+      location: "Deliverance Church International, Kamangu",
+      description: "Morning fundraising event to support land acquisition for community development projects.",
+      attendees: 120,
+      type: "Fundraiser",
+      status: "completed"
+    },
+    {
       id: 7,
-      title: "Campaign Launch: Hope Wave Begins",
-      date: "2024-01-15",
-      time: "16:00",
-      location: "Kasarani Stadium",
-      description: "Historic launch of our campaign with over 5,000 supporters showing up to start the movement.",
-      attendees: 5000,
-      type: "Launch",
+      title: "Visit to Makimei Children's Home",
+      date: "2024-08-10",
+      time: "14:00",
+      location: "Makimei Children's Home",
+      description: "Afternoon visit to support and encourage children at Makimei Children's Home with donations and fellowship.",
+      attendees: 30,
+      type: "Visit",
       status: "completed"
     },
     {
       id: 8,
-      title: "Community Listening Tour - Eastlands",
-      date: "2024-01-20",
-      time: "14:00",
-      location: "Various Locations, Eastlands",
-      description: "Door-to-door conversations with residents about their priorities and concerns.",
-      attendees: 800,
-      type: "Tour",
+      title: "Church Dinner",
+      date: "2024-08-15",
+      time: "19:00",
+      location: "KAG Church",
+      description: "Fellowship dinner with church members to strengthen community bonds and discuss shared values.",
+      attendees: 80,
+      type: "Dinner",
       status: "completed"
     }
   ];
@@ -121,20 +121,18 @@ const Events = () => {
 
   const getEventTypeColor = (type: string) => {
     switch (type.toLowerCase()) {
-      case "rally":
-        return "bg-hope text-white";
-      case "town hall":
-        return "bg-trust text-white";
-      case "forum":
-        return "bg-youth text-white";
-      case "debate":
-        return "bg-purple-500 text-white";
-      case "summit":
+      case "walk":
         return "bg-green-600 text-white";
-      case "tour":
-        return "bg-gray-600 text-white";
-      case "launch":
-        return "bg-red-600 text-white";
+      case "wedding":
+        return "bg-pink-500 text-white";
+      case "meeting":
+        return "bg-trust text-white";
+      case "fundraiser":
+        return "bg-hope text-white";
+      case "visit":
+        return "bg-youth text-white";
+      case "dinner":
+        return "bg-purple-500 text-white";
       default:
         return "bg-gray-500 text-white";
     }

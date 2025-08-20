@@ -37,7 +37,7 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    const phoneNumber = "+254700000000";
+    const phoneNumber = "+254768664079";
     const message = "Hi! I'd like to get in touch with the Muchanga Kiragu campaign — Kikuyu MP 2027. Mungu mbele!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
@@ -71,7 +71,7 @@ const Contact = () => {
                 icon: Phone,
                 title: "Call Us",
                 description: "Speak directly with our team",
-                contact: "+254 700 000 000",
+                contact: "+254 768 664079",
                 action: "Call Now",
                 color: "hope"
               },
@@ -87,7 +87,7 @@ const Contact = () => {
                 icon: Mail,
                 title: "Email",
                 description: "Send us a detailed message",
-                contact: "info@muchangakiragu.ke",
+                contact: "kiraguevans4@gmail.com",
                 action: "Email Us",
                 color: "trust"
               },
@@ -95,7 +95,7 @@ const Contact = () => {
                 icon: MapPin,
                 title: "Visit Office",
                 description: "Drop by our campaign office",
-                contact: "Nairobi, Kenya",
+                contact: "Kikuyu Town, Kenya",
                 action: "Get Directions",
                 color: "youth"
               }
@@ -165,7 +165,7 @@ const Contact = () => {
                         id="phone"
                         value={contactForm.phone}
                         onChange={(e) => setContactForm({...contactForm, phone: e.target.value})}
-                        placeholder="+254 700 000 000"
+                        placeholder="+254 768 664079"
                       />
                     </div>
                     <div>
@@ -256,9 +256,8 @@ const Contact = () => {
                 <CardContent>
                   <div className="space-y-2">
                     <p className="font-semibold">Muchanga Kiragu Campaign Headquarters</p>
-                    <p>Kimathi Street, Nairobi CBD</p>
-                    <p>P.O. Box 12345-00100</p>
-                    <p>Nairobi, Kenya</p>
+                    <p>Kikuyu Town, Kenya</p>
+                    <p>Serving Kikuyu Constituency</p>
                   </div>
                   <Button className="mt-4 w-full btn-youth font-raleway">
                     <MapPin className="h-4 w-4 mr-2" />
@@ -278,10 +277,10 @@ const Contact = () => {
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      { icon: Facebook, name: "Facebook", handle: "@HopeWave2027", color: "blue-600" },
-                      { icon: Twitter, name: "Twitter", handle: "@HopeWave2027", color: "blue-400" },
-                      { icon: Instagram, name: "Instagram", handle: "@hopewave2027", color: "pink-500" },
-                      { icon: Youtube, name: "YouTube", handle: "Hope Wave Campaign", color: "red-600" }
+                      { icon: Facebook, name: "Facebook", handle: "@MuchangaKiragu", color: "blue-600" },
+                      { icon: MessageCircle, name: "WhatsApp", handle: "+254 768 664079", color: "green-500" },
+                      { icon: Twitter, name: "X (Twitter)", handle: "@MuchangaKiragu", color: "gray-900" },
+                      { icon: Instagram, name: "TikTok", handle: "@muchangakiragu", color: "gray-900" }
                     ].map((social, index) => (
                       <a
                         key={index}
