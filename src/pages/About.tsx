@@ -45,7 +45,7 @@ const About = () => {
                     <h3 className="font-montserrat font-bold text-2xl mb-2">Muchanga Kiragu</h3>
                     <p className="text-white/80 mb-4">Kikuyu Constituency MP 2027</p>
                     <Badge className="bg-youth/20 text-youth border-youth">
-                      Age 25 • Lawyer • Community Youth Leader
+                      Age 25 • Lawyer •  Youth Leader
                     </Badge>
                   </div>
                 </CardContent>
