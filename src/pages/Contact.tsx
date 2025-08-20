@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Badge } from "@/components/ui/badge";
-import { Phone, Mail, MapPin, MessageCircle, Clock, Facebook, Twitter, Instagram, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, MessageCircle, Clock, Facebook, X, TikTok } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
     toast({
       title: "Message sent successfully!",
-      description: "Thank you for reaching out. We'll respond within 24 hours.",
+      description: "Thank you for reaching out. We'll respond shortly.",
     });
     setContactForm({
       name: "",
@@ -38,7 +38,7 @@ const Contact = () => {
 
   const handleWhatsApp = () => {
     const phoneNumber = "+254768664079";
-    const message = "Hi! I'd like to get in touch with the Muchanga Kiragu campaign — Kikuyu MP 2027. Mungu mbele!";
+    const message = "Hi! I'd like to get in touch with  Muchanga Kiragu — Kikuyu MP 2027. Mungu mbele!";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(url, '_blank');
   };
@@ -277,10 +277,10 @@ const Contact = () => {
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     {[
-                      { icon: Facebook, name: "Facebook", handle: "@MuchangaKiragu", color: "blue-600" },
+                      { icon: Facebook, name: "Facebook", handle: "@Evans Kiragu ", color: "blue-600" },
                       { icon: MessageCircle, name: "WhatsApp", handle: "+254 768 664079", color: "green-500" },
-                      { icon: Twitter, name: "X (Twitter)", handle: "@MuchangaKiragu", color: "gray-900" },
-                      { icon: Instagram, name: "TikTok", handle: "@muchangakiragu", color: "gray-900" }
+                      { icon: X, name: "X (Twitter)", handle: "@EvansKiragu6", color: "gray-900" },
+                      { icon: TikTok, name: "TikTok", handle: "@muchangakiragu", color: "gray-900" }
                     ].map((social, index) => (
                       <a
                         key={index}
