@@ -7,75 +7,75 @@ const News = () => {
   const newsArticles = [
     {
       id: 1,
-      title: "Muchanga Kiragu Announces Candidacy for Kikuyu MP 2027",
-      excerpt: "With the motto 'Mungu mbele' (God First), Muchanga Kiragu officially announces his candidacy for Kikuyu Constituency MP in the 2027 general elections...",
-      author: "Campaign Team",
-      date: "2024-08-15",
-      category: "Campaign",
+      title: "Hon. Evans Muchanga Engages Community and Faith Leaders Across Kikuyu",
+      excerpt: "On Sunday, July 27, Hon. Evans Muchanga participated in a series of events across Kikuyu Constituency, beginning with a church service in Karen, later attending a Pastors’ Fellowship at Thirime Grounds, and concluding with youth engagement at Mutuine Church...",
+      author: "Media Team",
+      date: "2025-07-27",
+      category: "Community",
       image: "/api/placeholder/400/250",
-      likes: 534,
-      comments: 167,
-      shares: 289
+      likes: 245,
+      comments: 61,
+      shares: 103
     },
     {
       id: 2,
-      title: "Youth-Led Initiative: Creating 2,000 Jobs in Kikuyu",
-      excerpt: "Our comprehensive plan for establishing modern skills training centers across Kikuyu Constituency will directly address youth unemployment challenges...",
-      author: "Muchanga Kiragu",
-      date: "2024-08-18",
-      category: "Policy",
+      title: "Hon. Evans Muchanga Participates in Sports and Community Activities in Gikambura",
+      excerpt: "On Sunday, August 17, Hon. Evans Muchanga attended community activities in Gikambura including a football match, the Mr. and Mrs. Thogoto event, and a women’s group meeting focused on empowerment and development...",
+      author: "Media Team",
+      date: "2025-08-17",
+      category: "Community",
       image: "/api/placeholder/400/250",
-      likes: 456,
-      comments: 123,
-      shares: 178
+      likes: 198,
+      comments: 44,
+      shares: 87
     },
     {
       id: 3,
-      title: "Community Listening Tour: Voices from Kikuyu",
-      excerpt: "Three weeks of grassroots conversations revealed the top priorities for Kikuyu residents: job creation, quality education, and improved infrastructure...",
-      author: "Community Team",
-      date: "2024-08-20",
+      title: "Hon. Evans Muchanga Meets Boda Boda Operators in Ruthigiti",
+      excerpt: "On Monday, August 18, Hon. Evans Muchanga engaged with boda boda operators in Ruthigiti, listening to their challenges and contributions to the local economy, and discussing ways to support the sector...",
+      author: "Media Team",
+      date: "2025-08-18",
       category: "Community",
       image: "/api/placeholder/400/250",
-      likes: 287,
-      comments: 85,
-      shares: 167
+      likes: 165,
+      comments: 39,
+      shares: 74
     },
     {
       id: 4,
-      title: "Mental Health Awareness: Breaking the Silence",
-      excerpt: "As part of our holistic approach to community wellness, we're launching mental health initiatives to support our youth and families...",
-      author: "Health Team",
-      date: "2024-08-16",
-      category: "Health",
+      title: "Hon. Evans Muchanga Attends Pastors’ Breakfast in Kikuyu",
+      excerpt: "On Saturday, August 30, Hon. Evans Muchanga joined local pastors for a breakfast meeting in Kikuyu that provided a platform for fellowship, prayer, and discussions on community matters...",
+      author: "Media Team",
+      date: "2025-08-30",
+      category: "Faith",
       image: "/api/placeholder/400/250",
-      likes: 342,
-      comments: 89,
-      shares: 134
+      likes: 176,
+      comments: 42,
+      shares: 80
     },
     {
       id: 5,
-      title: "Empowering Women: Leadership Beyond Boundaries",
-      excerpt: "Our campaign is committed to ensuring women's voices are heard and their leadership recognized in every aspect of community development...",
-      author: "Women's Committee",
-      date: "2024-08-14",
+      title: "Hon. Evans Muchanga Participates in Nachu Women Sacco Meeting",
+      excerpt: "On Wednesday, September 17, Hon. Evans Muchanga attended a meeting with members of the Nachu Women Sacco, engaging in discussions on economic empowerment, savings, and community development...",
+      author: "Media Team",
+      date: "2025-09-17",
       category: "Leadership",
       image: "/api/placeholder/400/250",
-      likes: 389,
-      comments: 156,
-      shares: 201
+      likes: 142,
+      comments: 37,
+      shares: 65
     },
     {
       id: 6,
-      title: "Faith and Service: Building on Strong Foundations",
-      excerpt: "Drawing from deep Christian values and community service, our campaign represents a new generation of God-centered leadership...",
-      author: "Muchanga Kiragu",
-      date: "2024-08-12",
-      category: "Faith",
+      title: "PCEA Karinde Convention Marks Hon. Evans Muchanga’s Parliamentary Bid Announcement",
+      excerpt: "On Sunday, August 24, PCEA Karinde hosted a convention where Hon. Evans Muchanga officially announced his bid to run for Kikuyu MP in 2027, with over 60 young aspirants invited from across the country...",
+      author: "Media Team",
+      date: "2025-08-24",
+      category: "Campaign",
       image: "/api/placeholder/400/250",
-      likes: 421,
-      comments: 178,
-      shares: 267
+      likes: 312,
+      comments: 88,
+      shares: 147
     }
   ];
 
@@ -120,8 +120,8 @@ const News = () => {
             Stay Updated on Our Movement
           </h1>
           <p className="text-xl leading-relaxed max-w-3xl mx-auto">
-            Follow our journey, policy updates, community stories, and campaign milestones.
-            Every story here represents real progress toward the change we're building together.
+            Follow our journey, community stories, faith events, and campaign milestones.
+            Every story here reflects ongoing engagement with Kikuyu Constituency.
           </p>
         </div>
       </section>
@@ -180,7 +180,7 @@ const News = () => {
           <div className="mb-12">  
             <h2 className="font-montserrat font-bold text-3xl mb-4">Latest Updates</h2>  
             <p className="campaign-subheading text-gray-600">  
-              Recent news, policy announcements, and community stories  
+              Recent community engagements, campaign announcements, and faith activities  
             </p>  
           </div>  
 
@@ -263,8 +263,7 @@ const News = () => {
                 Get Campaign Updates Direct to Your Inbox  
               </h2>  
               <p className="text-xl mb-8 leading-relaxed">  
-                Be the first to know about policy announcements, community stories,   
-                and campaign milestones. Join our growing community of supporters.  
+                Be the first to know about community engagements, campaign news, and milestones. Join our growing community of supporters.  
               </p>  
               <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">  
                 <input  
@@ -298,12 +297,12 @@ const News = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">  
             {[  
-              { name: "Campaign", count: 12 },  
-              { name: "Policy", count: 8 },  
-              { name: "Community", count: 15 },  
-              { name: "Leadership", count: 6 },  
-              { name: "Health", count: 4 },  
-              { name: "Faith", count: 7 }  
+              { name: "Campaign", count: 1 },  
+              { name: "Policy", count: 0 },  
+              { name: "Community", count: 3 },  
+              { name: "Leadership", count: 1 },  
+              { name: "Health", count: 0 },  
+              { name: "Faith", count: 1 }  
             ].map((category, index) => (  
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:scale-105 cursor-pointer animate-scale-in" style={{ animationDelay: `${index * 0.1}s` }}>  
                 <CardContent className="p-4 text-center">  
